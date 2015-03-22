@@ -1,0 +1,227 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.upper-wrapper{
+width:100%;
+height:20%;
+
+}
+
+.lower-wrapper{
+width:100%;
+height:79%;
+}
+
+.route-type-menu
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+li {
+    float: left;
+}
+
+button {
+  display: block;
+  width: 52px;
+  height: 32px;
+  background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 10px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;   
+}
+
+button:hover{
+border-bottom: 3px solid #4d90fe;
+
+}
+
+.menu-wrapper{
+  width: 98%;
+  height: 32px;
+  padding-left: 8px;
+
+}
+
+
+
+.image-right{
+	background-image: url(/images/image-right.PNG);
+  float: left;
+  width: 31px;
+  height: 68px;
+}
+
+.location-wrapper{
+  display: inline-block;
+}
+
+.location{
+	width: 323px;
+  height: 68px;
+  float: left;
+}
+
+.swap-button{
+	
+  float: left;
+
+}
+
+.swap{
+  background-image: url(/images/swap.PNG);
+  background-position: 5px;
+  width: 45px;
+  height: 68px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-wrapper{
+  width: 400px;
+    height: 143px;
+  border: 1px solid;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3),0 4px 15px -5px rgba(0,0,0,0.0);
+  border-color: #ccc;
+  margin-left: 3%;
+  float:left;
+ 
+}
+
+
+.border-bottom{
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+}
+
+.public{
+	background-image: url(/images/public.PNG); /* 16px x 16px */
+	background-position: 10px 4px;  
+
+}
+
+.public-selected{background-image: url(/images/public-selected.PNG); /* 16px x 16px */}
+.walking{background-image: url(/images/walking.PNG); /* 16px x 16px */}
+.walking-selected{background-image: url(/images/walking-selected.PNG); /* 16px x 16px */}
+.cycle{
+background-image: url(/images/cycling.PNG); /* 16px x 16px */
+background-position: 10px 5px;
+}
+
+.cycle-selected{background-image: url(/images/cycling-selected.PNG);background-position: 10px 5px; /* 16px x 16px */}
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            text-decoration:none;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#fff;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background: #7FB5DA;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+        
+  .border-class{
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: #ccc;
+  
+  }      
+        
+  .input-location{
+  width: 97%;
+  height: 31px;
+  border: none;
+  
+  
+  }
+  
+  .from{border-bottom: 1px solid #ccc;}
+  .to{border-bottom: 1px solid #ccc;}
+  .my-location-button{  float: right; height: 32px;cursor:pointer;}
+  
+  
+  #map-canvas{
+    width: 100%;
+    height: 400px;
+  
+  }
+  
+  .search-button{
+ background-image: url(/images/search-icon.PNG);
+  width: 53px;
+  height: 32px;
+  background-position: 4px 0px;
+  border: none;
+  margin-right: -14%;
+  float: right;
+  cursor:pointer;
+  }
+  .key{
+  float:right;
+  margin-right:5%;
+  }
+  
+  #steps{
+    float: left;
+  	width: 50%;
+  }
+  
+  #places{  float: left;}
